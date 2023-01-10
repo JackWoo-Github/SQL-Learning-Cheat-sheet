@@ -24,7 +24,6 @@ CREATE TABLE table_name(
   column2_name data_type constraints,
   ...);
 ```
-
 ***NOTES: Common Constraints**
 <br/>NOT NULL: The value must be specified when adding a new row, could be followed with DEFAULT 'default_value'
 <br/>UNIQUE: The same value cannot appear else where in the column
@@ -88,7 +87,6 @@ SELECT column_list
 FROM table_name
 ORDER BY column_name ASC|DESC;
 ```
-
 ***NOTES:**
 <br/>ASC: Ascending in value
 <br/>DESC: Descending in value
@@ -104,5 +102,4 @@ FROM table_name;
 SELECT DISTINCT column_list 
 FROM table_name;
 ```
-
 ***NOTES:** DISTINCT does not ignore NULL
