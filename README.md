@@ -25,7 +25,7 @@ CREATE TABLE table_name(
   ...);
 ```
 
-**NOTES: Common Constraints**
+***NOTES: Common Constraints**
 <br/>NOT NULL: The value must be specified when adding a new row, could be followed with DEFAULT 'default_value'
 <br/>UNIQUE: The same value cannot appear else where in the column
 <br/>PRIMARY KEY: If unspecified will increase the primary key from the previous by 1
@@ -76,19 +76,33 @@ WHERE condition1 AND condition2;
 ```
 
 **IN**
-
-
+```sql
+SELECT column_list 
+FROM table_name
+WHERE column_name IN (value1, value2, ...);
+```
 
 **ORDER BY**
+```sql
+SELECT column_list 
+FROM table_name
+ORDER BY column_name ASC|DESC;
+```
 
-
+***NOTES:**
+<br/>ASC: Ascending in value
+<br/>DESC: Descending in value
 
 **LIMIT**
-
-
+```sql
+SELECT LIMIT number column_list 
+FROM table_name;
+```
 
 **DISTINCT**
+```sql
+SELECT DISTINCT column_list 
+FROM table_name;
+```
 
-
-
-**NOTES:** DISTINCT does not ignore NULL
+***NOTES:** DISTINCT does not ignore NULL
