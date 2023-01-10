@@ -50,18 +50,45 @@ VALUES      (value1, value2),
 
 ## 3. Queries
 
-**SELECT**
+**SELECT**<br/>
+Select all columns
+```sql
+SELECT * FROM table_name;
+```
+Select specific columns;
+```sql
+SELECT column1_name, column2_name, column3_name
+FROM table_name;
+```
 
 **WHERE**
+```sql
+SELECT column_list 
+FROM table_name
+WHERE condition;
+```
 
 **AND/OR**
+```sql
+SELECT column_list 
+FROM table_name
+WHERE condition1 AND condition2;
+```
 
 **IN**
 
+
+
 **ORDER BY**
+
+
 
 **LIMIT**
 
+
+
 **DISTINCT**
+
+
 
 **NOTES:** DISTINCT does not ignore NULL
