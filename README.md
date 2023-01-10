@@ -103,3 +103,13 @@ SELECT DISTINCT column_list
 FROM table_name;
 ```
 ***NOTES:** DISTINCT does not ignore NULL
+
+## 4. Aggregation
+
+**Group By Function**
+
+**AS Operator**
+
+**Having Clause**
+
+
