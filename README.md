@@ -107,6 +107,13 @@ FROM table_name;
 ## 4. Aggregation
 
 **Group By Function**
+<BR/>Aggregate Functions: COUNT, MAX, MIN, SUM, AVG
+```sql
+SELECT column1_name,
+       MAX(column2_name)
+FROM table_name
+GROUP BY column3_name;
+```
 
 **AS Operator**
 
