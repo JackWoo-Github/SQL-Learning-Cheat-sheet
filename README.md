@@ -114,6 +114,10 @@ SELECT column1_name,
 FROM table_name
 GROUP BY column3_name;
 ```
+***NOTES:**
+<br/>Neither COUNT() nor DISTINCT() ignore Null
+<br/>However, COUNT(DISTINCT column1_name, column2_name, column3_name) will skip Null
+<br/>which means, if a Null exists in any of the three columns, the whole entry would not be counted.
 
 **AS Operator**
 ```sql
