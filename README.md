@@ -107,7 +107,7 @@ FROM table_name;
 ## 4. Aggregation
 
 **Group By Function**
-<BR/>Aggregate Functions: COUNT, MAX, MIN, SUM, AVG
+<br/>Aggregate Functions: COUNT, MAX, MIN, SUM, AVG
 ```sql
 SELECT column1_name,
        MAX(column2_name)
@@ -116,7 +116,20 @@ GROUP BY column3_name;
 ```
 
 **AS Operator**
+```sql
+SELECT column1_name,
+       AVG(column2_name) AS `New_Name`
+FROM table_name
+GROUP BY column1_name
+```
 
 **Having Clause**
-
-
+<br/> WHERE clause on Aggregated Data
+```sql
+SELECT column1_name,
+       AVG(column2_name)
+FROM table_name
+GROUP BY column1_name
+HAVING AVG(column2_name) > #;
+```
+**OVER & PARTITION Clause**
