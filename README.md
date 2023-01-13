@@ -134,13 +134,25 @@ HAVING AVG(column2_name) > #;
 ```
 **OVER & PARTITION Clause**
 <br/>GROUP BY creates an entirely new summary table
-<br/>Using OVER allows to reserve the original table
+<br/>Using OVER allows to reserve the original table, OVER is like an operator
+<br/>PARTITION: The category grouped by
 ```sql
 SELECT column1_name,
        RANK() OVER (PARTITION BY column2_name ORDER BY column3_name ASC|DESC) AS `New_Name`
 FROM table_name;
 ```
+***NOTES: Common Window Function**
+- COUNT()
+- SUM()
+- ROW_NUMBER()
+- RANK()
+- DENSE_RANK()
+- LEAD()
+- LAG()
 
+## 5. Joining
 
-
-
+**Inner Join**
+**Left Join**
+**Right Join****
+**Unions**
