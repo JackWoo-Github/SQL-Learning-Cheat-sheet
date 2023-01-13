@@ -136,7 +136,9 @@ HAVING AVG(column2_name) > #;
 <br/>GROUP BY creates an entirely new summary table
 <br/>Using OVER allows to reserve the original table
 ```sql
-
+SELECT column1_name,
+       RANK() OVER (PARTITION BY column2_name ORDER BY column3_name ASC|DESC) AS `New_Name`
+FROM table_name;
 ```
 
 
