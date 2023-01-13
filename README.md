@@ -153,6 +153,9 @@ FROM table_name;
 ## 5. Joining
 
 **Inner Join**
+
 **Left Join**
-**Right Join****
+
+**Right Join**
+
 **Unions**
