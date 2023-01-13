@@ -133,3 +133,12 @@ GROUP BY column1_name
 HAVING AVG(column2_name) > #;
 ```
 **OVER & PARTITION Clause**
+<br/>GROUP BY creates an entirely new summary table
+<br/>Using OVER allows to reserve the original table
+```sql
+
+```
+
+
+
+
