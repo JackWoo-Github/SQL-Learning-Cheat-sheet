@@ -174,6 +174,16 @@ LEFT JOIN table2_name b
 ON a.column1_name = b.column2_name;
 ```
 
+**Left Join Except**
+<br/>Only left Records that do not appear in the right table
+```sql
+SELECT column_list
+FROM table1_name a
+LEFT JOIN table2_name b
+ON a.column1_name = b.column2_name
+WHERE b.column2_name IS NULL;
+```
+
 **Right Join**
 <br/>Preserve everything from the right table and what matches from the left
 ```sql
@@ -181,6 +191,16 @@ SELECT column_list
 FROM table1_name a
 RIGHT JOIN table2_name b
 ON a.column1_name = b.column2_name;
+```
+
+**Right Join Except**
+<br/>Only Right Records that do not appear in the left table
+```sql
+SELECT column_list
+FROM table1_name a
+LEFT JOIN table2_name b
+ON a.column1_name = b.column2_name
+WHERE a.column1_name IS NULL;
 ```
 
 **Unions**
