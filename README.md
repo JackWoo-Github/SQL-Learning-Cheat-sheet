@@ -159,24 +159,28 @@ FROM table_name;
 **Inner Join / Join**
 <br/>Preserve the rows where column values match in the both tables
 ```sql
-SELECT a.column1_name, b.column2_name
+SELECT column_list
 FROM table1_name a
 INNER JOIN table2_name b
-ON a.column3_name = b.column4_name;
+ON a.column1_name = b.column2_name;
 ```
 
 **Left Join**
 <br/>Preserve everything from the left table and what matches from the right
 ```sql
-SELECT a.column1_name, b.column2_name
+SELECT column_list
 FROM table1_name a
 LEFT JOIN table2_name b
-ON a.column3_name = b.column4_name;
+ON a.column1_name = b.column2_name;
 ```
 
 **Right Join**
-<br/>
+<br/>Preserve everything from the right table and what matches from the left
 ```sql
+SELECT column_list
+FROM table1_name a
+RIGHT JOIN table2_name b
+ON a.column1_name = b.column2_name;
 ```
 
 **Unions**
