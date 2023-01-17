@@ -203,4 +203,7 @@ ON a.column1_name = b.column2_name
 WHERE a.column1_name IS NULL;
 ```
 
+**Cross Join**
+
+
 **Unions**
