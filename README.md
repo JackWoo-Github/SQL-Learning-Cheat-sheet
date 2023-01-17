@@ -156,7 +156,14 @@ FROM table_name;
 
 ## 5. Joining
 
-**Inner Join**
+**Inner Join / Join**
+<br/>Combine multiple tables and will preserve the rows where column values match in the tables being combined
+```sql
+SELECT a.column1_name, b.column2_name
+FROM table1_name a
+INNER JOIN table2_name b
+ON a.column3_name = b.column4_name;
+```
 
 **Left Join**
 
