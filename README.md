@@ -157,7 +157,7 @@ FROM table_name;
 ## 5. Joining
 
 **Inner Join / Join**
-<br/>Combine multiple tables and will preserve the rows where column values match in the tables being combined
+<br/>Preserve the rows where column values match in the both tables
 ```sql
 SELECT a.column1_name, b.column2_name
 FROM table1_name a
@@ -166,7 +166,17 @@ ON a.column3_name = b.column4_name;
 ```
 
 **Left Join**
+<br/>Preserve everything from the left table and what matches from the right
+```sql
+SELECT a.column1_name, b.column2_name
+FROM table1_name a
+LEFT JOIN table2_name b
+ON a.column3_name = b.column4_name;
+```
 
 **Right Join**
+<br/>
+```sql
+```
 
 **Unions**
