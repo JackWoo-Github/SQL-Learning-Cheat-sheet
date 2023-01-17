@@ -198,7 +198,7 @@ ON a.column1_name = b.column2_name;
 ```sql
 SELECT column_list
 FROM table1_name a
-LEFT JOIN table2_name b
+RIGHT JOIN table2_name b
 ON a.column1_name = b.column2_name
 WHERE a.column1_name IS NULL;
 ```
