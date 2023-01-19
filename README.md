@@ -136,23 +136,6 @@ FROM table_name
 GROUP BY column1_name
 HAVING AVG(column2_name) > #;
 ```
-**OVER & PARTITION Clause**
-<br/>GROUP BY creates an entirely new summary table
-<br/>Using OVER allows to reserve the original table, OVER is like an operator
-<br/>PARTITION: The category grouped by
-```sql
-SELECT column1_name,
-       RANK() OVER (PARTITION BY column2_name ORDER BY column3_name ASC|DESC) AS `New_Name`
-FROM table_name;
-```
-***NOTES: Common Window Function**
-- COUNT()
-- SUM()
-- ROW_NUMBER()
-- RANK()
-- DENSE_RANK()
-- LEAD()
-- LAG()
 
 ## 5. Joining
 
@@ -213,9 +196,46 @@ CROSS JOIN table2_name b;
 ```
 
 **Unions**
+<br/>Joins combine columns while Unions combine rows.
+<br/>Tables must have same fields.
+<br/>UNION: only keeps unique records
+```sql
+SELECT column_list
+FROM table1_name
+UNION
+SELECT column_list
+FROM table2_name;
+```
+UNION ALL: keeps all records, including duplicates
+```sql
+SELECT column_list
+FROM table1_name
+UNION ALL
+SELECT column_list
+FROM table2_name;
+```
 
+## 6. CASE Operator
+```sql
+```
 
+## 7. Window Functions
 
-
-
+**OVER & PARTITION Clause**
+<br/>GROUP BY creates an entirely new summary table
+<br/>Using OVER allows to reserve the original table, OVER is like an operator
+<br/>PARTITION: The category grouped by
+```sql
+SELECT column1_name,
+       RANK() OVER (PARTITION BY column2_name ORDER BY column3_name ASC|DESC) AS `New_Name`
+FROM table_name;
+```
+***NOTES: Common Window Function**
+- COUNT()
+- SUM()
+- ROW_NUMBER()
+- RANK()
+- DENSE_RANK()
+- LEAD()
+- LAG()
 
