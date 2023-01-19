@@ -224,6 +224,10 @@ FROM table2_name;
 
 ## 6. CASE Operator
 ```sql
+SELECT column_list,
+       CASE WHEN condition1 THEN 
+       ELSE END AS Column_name
+FROM table1_name;
 ```
 
 ## 7. Window Functions
