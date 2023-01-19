@@ -204,10 +204,18 @@ WHERE a.column1_name IS NULL;
 ```
 
 **Cross Join**
-<br/>Combine each row from the first table with each row from the second table
+<br/>Combine each row from the first table with each row from the second table, returning all possible combinations of all rows.
+<br/>It has no ON clause.
 ```sql
 SELECT column_list
 FROM table1_name a
 CROSS JOIN table2_name b;
 ```
+
 **Unions**
+
+
+
+
+
+
