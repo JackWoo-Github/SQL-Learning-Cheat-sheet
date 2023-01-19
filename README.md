@@ -97,6 +97,13 @@ SELECT LIMIT number column_list
 FROM table_name;
 ```
 
+**OFFSET**
+```sql
+SELECT column_list 
+FROM table_name
+LIMIT [Number to limit by] OFFSET [Number of rows to skip];
+```
+
 **DISTINCT**
 ```sql
 SELECT DISTINCT column_list 
