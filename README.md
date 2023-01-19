@@ -204,6 +204,10 @@ WHERE a.column1_name IS NULL;
 ```
 
 **Cross Join**
-
-
+<br/>Combine each row from the first table with each row from the second table
+```sql
+SELECT column_list
+FROM table1_name a
+CROSS JOIN table2_name b;
+```
 **Unions**
