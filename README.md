@@ -232,6 +232,11 @@ FROM table1_name;
 ```
 
 ## 7. Subqueries
+Can be seen inside these states
+- SELECT statement
+- WHERE statement
+- Used in comparison <, >, =, IN, ANY, ALL
+- Nested in INSERT, UPDATE, DELETE
 
 
 ## 8. Common Table Expressions (CTEs)
