@@ -231,7 +231,13 @@ SELECT column_list,
 FROM table1_name;
 ```
 
-## 7. Window Functions
+## 7. Subqueries
+
+
+## 8. Common Table Expressions (CTEs)
+
+
+## 9. Window Functions
 
 **OVER & PARTITION Clause**
 <br/>GROUP BY creates an entirely new summary table
@@ -250,4 +256,10 @@ FROM table_name;
 - DENSE_RANK()
 - LEAD()
 - LAG()
+
+## 10. String Function & Regular Expression
+
+
+
+
 
