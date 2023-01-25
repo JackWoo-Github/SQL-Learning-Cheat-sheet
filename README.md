@@ -237,7 +237,14 @@ Can be seen inside these states
 - WHERE statement
 - Used in comparison <, >, =, IN, ANY, ALL
 - Nested in INSERT, UPDATE, DELETE
-
+```sql
+SELECT column_list
+FROM table1_name
+WHERE column1_name NOT IN
+      (SELECT column2_name
+       FROM table2_name
+       WHERE condition1);
+```
 
 ## 8. Common Table Expressions (CTEs)
 
