@@ -242,12 +242,17 @@ SELECT column_list
 FROM table1_name
 WHERE column1_name NOT IN
       (SELECT column2_name
-       FROM table2_name
-       WHERE condition1);
+       FROM table2_name);
 ```
 
 ## 8. Common Table Expressions (CTEs)
-
+Ability to call a subquery by a name
+```sql
+WITH CTE_name1 AS ( query1 ),
+     CTE_name2 AS ( query2 )
+SELECT *
+FROM CTE_name2;
+```
 
 ## 9. Window Functions
 
