@@ -276,7 +276,7 @@ FROM table_name;
 - LAG()
 
 **ROWS/RANGE Clause**
-<br/>Allows sliding window frame calculations
+<br/>Allows sliding window frame calculations (Cumulative -> Rolling Window)
 <br/>ROWS/RANGE BETWEEN lower_bound AND upper_bound
 <br/>Both ROWS and RANGE specify the window frame in relation to the current row
 <br/>The ROW clause does it by specifying a fixed number of rows that precede or follow the current row.
